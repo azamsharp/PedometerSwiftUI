@@ -13,7 +13,36 @@
 		3465F88624B4BE7700088540 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3465F87124B4BE7500088540 /* ContentView.swift */; };
 		3465F88724B4BE7700088540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3465F87224B4BE7700088540 /* Assets.xcassets */; };
 		3465F88824B4BE7700088540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3465F87224B4BE7700088540 /* Assets.xcassets */; };
+		3465F89824B4D73800088540 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3465F89724B4D73800088540 /* WidgetKit.framework */; };
+		3465F89A24B4D73800088540 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3465F89924B4D73800088540 /* SwiftUI.framework */; };
+		3465F89D24B4D73800088540 /* JustWalking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3465F89C24B4D73800088540 /* JustWalking.swift */; };
+		3465F89F24B4D73B00088540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3465F89E24B4D73B00088540 /* Assets.xcassets */; };
+		3465F8A324B4D73B00088540 /* JustWalkingExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3465F89524B4D73800088540 /* JustWalkingExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3465F8A124B4D73B00088540 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3465F86B24B4BE7500088540 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3465F89424B4D73800088540;
+			remoteInfo = JustWalkingExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3465F8A424B4D73B00088540 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3465F8A324B4D73B00088540 /* JustWalkingExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3465F87024B4BE7500088540 /* JustWalkingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustWalkingApp.swift; sourceTree = "<group>"; };
@@ -24,6 +53,14 @@
 		3465F87F24B4BE7700088540 /* JustWalking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustWalking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3465F88124B4BE7700088540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3465F88224B4BE7700088540 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		3465F89524B4D73800088540 /* JustWalkingExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JustWalkingExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3465F89724B4D73800088540 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		3465F89924B4D73800088540 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		3465F89C24B4D73800088540 /* JustWalking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustWalking.swift; sourceTree = "<group>"; };
+		3465F89E24B4D73B00088540 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3465F8A024B4D73B00088540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3465F8A824B4D77700088540 /* JustWalking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JustWalking.entitlements; sourceTree = "<group>"; };
+		3465F8A924B4D7B700088540 /* JustWalkingExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JustWalkingExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,15 +78,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3465F89224B4D73800088540 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3465F89A24B4D73800088540 /* SwiftUI.framework in Frameworks */,
+				3465F89824B4D73800088540 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		3465F86A24B4BE7500088540 = {
 			isa = PBXGroup;
 			children = (
+				3465F8A924B4D7B700088540 /* JustWalkingExtension.entitlements */,
 				3465F86F24B4BE7500088540 /* Shared */,
 				3465F87924B4BE7700088540 /* iOS */,
 				3465F88024B4BE7700088540 /* macOS */,
+				3465F89B24B4D73800088540 /* JustWalking */,
+				3465F89624B4D73800088540 /* Frameworks */,
 				3465F87824B4BE7700088540 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +118,7 @@
 			children = (
 				3465F87724B4BE7700088540 /* JustWalking.app */,
 				3465F87F24B4BE7700088540 /* JustWalking.app */,
+				3465F89524B4D73800088540 /* JustWalkingExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +126,7 @@
 		3465F87924B4BE7700088540 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				3465F8A824B4D77700088540 /* JustWalking.entitlements */,
 				3465F87A24B4BE7700088540 /* Info.plist */,
 			);
 			path = iOS;
@@ -90,6 +141,25 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		3465F89624B4D73800088540 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3465F89724B4D73800088540 /* WidgetKit.framework */,
+				3465F89924B4D73800088540 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3465F89B24B4D73800088540 /* JustWalking */ = {
+			isa = PBXGroup;
+			children = (
+				3465F89C24B4D73800088540 /* JustWalking.swift */,
+				3465F89E24B4D73B00088540 /* Assets.xcassets */,
+				3465F8A024B4D73B00088540 /* Info.plist */,
+			);
+			path = JustWalking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,10 +170,12 @@
 				3465F87324B4BE7700088540 /* Sources */,
 				3465F87424B4BE7700088540 /* Frameworks */,
 				3465F87524B4BE7700088540 /* Resources */,
+				3465F8A424B4D73B00088540 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3465F8A224B4D73B00088540 /* PBXTargetDependency */,
 			);
 			name = iOS;
 			productName = iOS;
@@ -127,6 +199,23 @@
 			productReference = 3465F87F24B4BE7700088540 /* JustWalking.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3465F89424B4D73800088540 /* JustWalkingExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3465F8A724B4D73B00088540 /* Build configuration list for PBXNativeTarget "JustWalkingExtension" */;
+			buildPhases = (
+				3465F89124B4D73800088540 /* Sources */,
+				3465F89224B4D73800088540 /* Frameworks */,
+				3465F89324B4D73800088540 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JustWalkingExtension;
+			productName = JustWalkingExtension;
+			productReference = 3465F89524B4D73800088540 /* JustWalkingExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -140,6 +229,9 @@
 						CreatedOnToolsVersion = 12.0;
 					};
 					3465F87E24B4BE7700088540 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					3465F89424B4D73800088540 = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
@@ -159,6 +251,7 @@
 			targets = (
 				3465F87624B4BE7700088540 /* iOS */,
 				3465F87E24B4BE7700088540 /* macOS */,
+				3465F89424B4D73800088540 /* JustWalkingExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -177,6 +270,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3465F88824B4BE7700088540 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3465F89324B4D73800088540 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3465F89F24B4D73B00088540 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +302,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3465F89124B4D73800088540 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3465F89D24B4D73800088540 /* JustWalking.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3465F8A224B4D73B00088540 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3465F89424B4D73800088540 /* JustWalkingExtension */;
+			targetProxy = 3465F8A124B4D73B00088540 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3465F88924B4BE7700088540 /* Debug */ = {
@@ -318,8 +435,10 @@
 		3465F88C24B4BE7700088540 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iOS/JustWalking.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B2Q8EGNCQA;
 				ENABLE_PREVIEWS = YES;
@@ -340,8 +459,10 @@
 		3465F88D24B4BE7700088540 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iOS/JustWalking.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B2Q8EGNCQA;
 				ENABLE_PREVIEWS = YES;
@@ -408,6 +529,55 @@
 			};
 			name = Release;
 		};
+		3465F8A524B4D73B00088540 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = JustWalkingExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2Q8EGNCQA;
+				INFOPLIST_FILE = JustWalking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.azamsharp.JustWalking.JustWalking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3465F8A624B4D73B00088540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = JustWalkingExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2Q8EGNCQA;
+				INFOPLIST_FILE = JustWalking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.azamsharp.JustWalking.JustWalking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -434,6 +604,15 @@
 			buildConfigurations = (
 				3465F88F24B4BE7700088540 /* Debug */,
 				3465F89024B4BE7700088540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3465F8A724B4D73B00088540 /* Build configuration list for PBXNativeTarget "JustWalkingExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3465F8A524B4D73B00088540 /* Debug */,
+				3465F8A624B4D73B00088540 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
